@@ -3,19 +3,140 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --header-dark: #464e59;
+  --dark-grey: #56606a;
+  --middle-grey: #6a7886;
+  --light-grey: #a8b6bf;
+  --primary-color: #f0f1f2;
+  --secondary-color: #030c61;
+  --gold: #d4af37;
 }
 
 body {
+  margin: 0;
+  width: 100%;
+  overflow-x: hidden;
+  background-color: var(--primary-color);
+}
+
+.header {
+  background: var(--primary-color);
+  font-family: "Poppins", sans-serif;
+  color: var(--primary-color);
+}
+
+.header .info-bar {
+  background-color: #31343a;
+  font-size: 0.875rem;
+  border-bottom: 1px solid var(--dark-grey);
+}
+
+.header .social-icon {
+  padding: 0.5rem;
+  transition: transform 0.3s;
+}
+
+.header .social-icon:hover {
+  transform: scale(1.1);
+}
+
+.header .logo-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.header .logo-divider {
+  height: 2.5rem;
+}
+
+.header .nav-links {
+  display: flex;
+  gap: 2.5rem;
+  color: #22252a;
+}
+
+.header .nav-links a {
+  font-size: 1rem;
   color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  padding-bottom: 0.25rem;
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  transition: color 0.3s, border-color 0.3s;
+}
+
+.header .nav-links a:hover {
+  color: var(--light-grey);
+  border-bottom-color: var(--gold);
+}
+
+.card-home-1 {
+  background-color: var(--header-dark);
+  color: var(--primary-color);
+  border-radius: 10px;
+  padding: 2rem;
+  height: 18rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  top: -3rem;
+  position: relative;
+
+  span {
+    color: #ffffff;
+  }
+}
+
+.card-home-2 {
+  background-color: var(--dark-grey);
+  color: var(--primary-color);
+  border-radius: 10px;
+  padding: 2rem;
+  height: 19rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  top: -3.5rem;
+  position: relative;
+
+  span {
+    color: #ffffff;
+  }
+}
+
+.teste {
+  h1 span {
+    color: var(--secondary-color);
+  }
+}
+
+.card-service {
+  width: 23rem;
+  background-color: white;
+  margin: 10px;
+  box-sizing: border-box;
+  padding: 30px 20px 10px 20px;
+  border-radius: 10px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 12;
+  align-items: center;
+  box-shadow: 0px 15px 40px -5px rgb(0 0 0 / 10%);
+
+  h3 {
+    color: var(--header-dark);
+  }
+
+  p {
+    color: var(--middle-grey);
+    font-size: 15px;
+  }
+
+  
+}
+
+.card-service:hover {
+  background-color: var(--primary-color);
+  box-shadow: none;
 }
