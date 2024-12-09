@@ -1,8 +1,8 @@
 import Image from "next/image";
 import Logo from "../../../public/images/logo.png";
-import FacebookLogo from "../../../public/images/facebook-logo.svg";
-import InstagramLogo from "../../../public/images/instagram-logo.svg";
-import WhatsappLogo from "../../../public/images/whatsapp-logo.svg";
+
+import { FaFacebookF, FaInstagram, FaWhatsapp } from "react-icons/fa";
+
 
 export default function Header() {
     return (
@@ -12,16 +12,15 @@ export default function Header() {
             <div className="info-bar flex justify-between items-center px-4">
                 <div className="flex items-center">
                     <a href="#" className="social-icon">
-                        <Image src={InstagramLogo} alt="Instagram" width={20} height={20} />
+                        <FaInstagram color="#fff" size={18} />
                     </a>
                     <a href="#" className="social-icon">
-                        <Image src={FacebookLogo} alt="Facebook" width={20} height={20} />
+                        <FaFacebookF color="#fff" size={18} />
                     </a>
                     <a href="#" className="social-icon">
-                        <Image src={WhatsappLogo} alt="Whatsapp" width={20} height={20} />
+                        <FaWhatsapp color="#fff" size={18} />
                     </a>
                 </div>
-                <div>Horário: Seg - Sex, 08h às 18h</div>
             </div>
 
             <div className="flex justify-between items-center p-4">

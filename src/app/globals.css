@@ -16,7 +16,6 @@ body {
   margin: 0;
   width: 100%;
   overflow-x: hidden;
-  background-color: var(--primary-color);
 }
 
 .header {
@@ -32,7 +31,7 @@ body {
 }
 
 .header .social-icon {
-  padding: 0.5rem;
+  padding: 0.5rem 0.5rem 0.5rem 0rem;
   transition: transform 0.3s;
 }
 
@@ -57,7 +56,7 @@ body {
 
 .header .nav-links a {
   font-size: 1rem;
-  color: var(--foreground);
+  color: var(--header-dark);
   padding-bottom: 0.25rem;
   text-decoration: none;
   border-bottom: 2px solid transparent;
@@ -111,7 +110,7 @@ body {
 
 .card-service {
   width: 23rem;
-  background-color: white;
+  background-color: #FFFFFF;
   margin: 10px;
   box-sizing: border-box;
   padding: 30px 20px 10px 20px;
@@ -131,12 +130,29 @@ body {
   p {
     color: var(--middle-grey);
     font-size: 15px;
-  }
-
-  
+  } 
 }
 
 .card-service:hover {
-  background-color: var(--primary-color);
   box-shadow: none;
+}
+
+.footer {
+  background-color: #f8f8f8;
+}
+
+.footer-social-icon {
+  background-color: var(--secondary-color);
+  padding: 6px;
+  border-radius: 100px;
+}
+
+.footer h3 {
+  color: var(--header-dark);
+}
+
+.footer-contatos-icon {
+  background-color: var(--secondary-color);
+  padding: 10px;
+  border-radius: 100px;
 }
