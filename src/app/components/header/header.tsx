@@ -1,8 +1,11 @@
+"use client"
+
 import Image from "next/image";
-import Logo from "../../../public/images/logo.png";
+
+import Logo from "../../../../public/images/logo.png";
 
 import { FaFacebookF, FaInstagram, FaWhatsapp } from "react-icons/fa";
-
+import Link from "next/link";
 
 export default function Header() {
     return (
@@ -32,11 +35,11 @@ export default function Header() {
 
                 {/* Navigation Links */}
                 <nav className="nav-links">
-                    <a href="#">Início</a>
-                    <a href="#">A DenteFix</a>
-                    <a href="#">A Clinica</a>
-                    <a href="#">Equipe</a>
-                    <a href="#">Contato</a>
+                    <Link href="/">Início</Link>
+                    <Link href="#">A DenteFix</Link>
+                    <Link href="#">A Clinica</Link>
+                    <Link href="/equipe">Equipe</Link>
+                    <Link href="#">Contato</Link>
                 </nav>
             </div>
         </header>

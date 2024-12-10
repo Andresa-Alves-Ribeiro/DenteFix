@@ -7,7 +7,7 @@ import {
     EmblaCarouselType,
     EmblaEventType,
 } from "embla-carousel";
-import "../../app/embla-carousel.css";
+import "../../../app/embla-carousel.css";
 
 export default function MyCarousel() {
     // Configuração do autoplay

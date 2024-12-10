@@ -102,15 +102,13 @@ body {
   }
 }
 
-.teste {
-  h1 span {
-    color: var(--secondary-color);
-  }
+h1 span {
+  color: var(--secondary-color);
 }
 
 .card-service {
   width: 23rem;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   margin: 10px;
   box-sizing: border-box;
   padding: 30px 20px 10px 20px;
@@ -130,11 +128,31 @@ body {
   p {
     color: var(--middle-grey);
     font-size: 15px;
-  } 
+  }
 }
 
 .card-service:hover {
   box-shadow: none;
+}
+
+.see-more-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.see-more-button button {
+  background-color: var(--header-dark);
+  width: 8rem;
+  margin-top: 15px;
+  color: #ffffff;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.see-more-button button:hover {
+  background-color: #373b42;
+  transform: scale(1.1);
 }
 
 .footer {
@@ -155,4 +173,11 @@ body {
   background-color: var(--secondary-color);
   padding: 10px;
   border-radius: 100px;
+}
+
+.banner-equipe {
+  background-image: url(../../public/images/DENTEFIX_157.jpg);
+  background-position: center;
+  background-size: cover;
+  min-height: 50vh;
 }

@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-import Logo from "../../../public/images/logo.png";
+import Logo from "../../../../public/images/logo.png";
 
 import { AiOutlineRight } from "react-icons/ai";
 import { BsFillTelephoneFill } from "react-icons/bs";
@@ -10,7 +10,7 @@ import { MdEmail } from "react-icons/md";
 
 export default function Footer() {
     return (
-        <div className="footer pt-20 pb-1">
+        <div id="footer" className="footer pt-20 pb-1">
             <div className="flex justify-evenly">
                 <div className="flex flex-col">
                     <Image src={Logo} alt="Logo da Empresa" width={200} />
