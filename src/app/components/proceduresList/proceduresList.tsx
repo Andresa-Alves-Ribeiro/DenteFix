@@ -40,29 +40,31 @@ export default function ProceduresList() {
 
 
     return (
-        <div className="flex flex-col text-center justify-center mx-28 pb-20 services-itens">
-            <div className={`${isVisible ? 'animate__animated animate__slideInUp' : ''
-                }`}>
-                <h1 ref={elementRef} className="uppercase font-bold text-5xl mb-6 text-zinc-700">Nós oferecemos diferentes <span>serviços</span></h1>
+        <div className='container'>
+            <div className="flex flex-col text-center justify-center py-20 services-itens">
+                <div className={`${isVisible ? 'animate__animated animate__slideInUp' : ''
+                    }`}>
+                    <h1 ref={elementRef} className="uppercase font-bold text-5xl mb-6 text-zinc-700">Nós oferecemos diferentes <span>serviços</span></h1>
 
-                <span ref={elementRef} className={`text-zinc-500`}>
-                    Transforme seu sorriso com nossos serviços dentários de qualidade.
-                    Oferecemos tratamentos com tecnologia avançada e uma equipe dedicada ao seu bem-estar.
-                    Agende sua consulta e descubra o poder de um sorriso saudável e radiante!
-                </span>
+                    <span ref={elementRef} className={`text-zinc-500`}>
+                        Transforme seu sorriso com nossos serviços dentários de qualidade.
+                        Oferecemos tratamentos com tecnologia avançada e uma equipe dedicada ao seu bem-estar.
+                        Agende sua consulta e descubra o poder de um sorriso saudável e radiante!
+                    </span>
 
-            </div>
+                </div>
 
-            <ul className="flex flex-wrap justify-center mt-14">
-                {services.slice(0, itemsToShow).map((service, index) => (
-                    <ServiceCard key={index} {...service} isVisible={isVisible} />
-                ))}
-            </ul>
+                <ul className="flex flex-wrap justify-center mt-14">
+                    {services.slice(0, itemsToShow).map((service, index) => (
+                        <ServiceCard key={index} {...service} isVisible={isVisible} />
+                    ))}
+                </ul>
 
-            <div className="see-more-button">
-                <button onClick={handleShowMore} className='teste'>
-                    Ver Mais
-                </button>
+                <div className="see-more-button">
+                    <button onClick={handleShowMore} className='teste'>
+                        {itemsToShow === 9 ? "Ver Mais" : "Ver Menos"}
+                    </button>
+                </div>
             </div>
         </div>
     );

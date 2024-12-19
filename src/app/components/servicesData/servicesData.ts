@@ -1,21 +1,37 @@
 import { Service } from "@/app/types";
 
+import Endodontia from "../../../../public/images/endodontia.png"
+import Implantodontia from "../../../../public/images/implantodontia.png"
+import HarmonizacaoOrofacial from "../../../../public/images/Harmonização orofacial.png"
+import Ortodontia from "../../../../public/images/ortodontia.png"
+import ClinicaGeral from "../../../../public/images/clinica geral.png"
+import Proteses from "../../../../public/images/proteses.png"
+import Estomatologia from "../../../../public/images/estomatologia.png"
+import LentesContato from "../../../../public/images/lentes de contato.png"
+import Dentistica from "../../../../public/images/dentistica.png"
+import Odontopediatria from "../../../../public/images/Odontopediatria.png"
+import Periodontia from "../../../../public/images/periodontia.png"
+import CirurgiaTraumatologia from "../../../../public/images/Cirurgia e Traumatologia.png"
+import DisfuncaoTemporomandibular from "../../../../public/images/Disfunção Temporomandibular.png"
+import NecessidadesEspeciais from "../../../../public/images/disabled-person.png"
+import FuncionalMaxilares from "../../../../public/images/Ortordontia dos Maxilares.png"
+
 const services: Service[] = [
-    { name: "Endodontia", image: "/images/endodontia.png", width: 60 },
-    { name: "Implantodontia", image: "/images/implantodontia.png", width: 60 },
-    { name: "Harmonização Orofacial", image: "/images/Harmonização orofacial.png", width: 70 },
-    { name: "Ortodontia", image: "/images/ortodontia.png", width: 60 },
-    { name: "Clinica Geral", image: "/images/clinica geral.png", width: 60 },
-    { name: "Próteses", image: "/images/proteses.png", width: 60 },
-    { name: "Estomatologia", image: "/images/estomatologia.png", width: 50 },
-    { name: "Lentes de Contato", image: "/images/lentes de contato.png", width: 60 },
-    { name: "Dentística", image: "/images/dentistica.png", width: 60 },
-    { name: "Odontopediatria", image: "/images/Odontopediatria.png", width: 70 },
-    { name: "Periodontia", image: "/images/periodontia.png", width: 60 },
-    { name: "Cirurgia e Traumatologia", image: "/images/Cirurgia e Traumatologia.png", width: 70 },
-    { name: "Disfunção Temporomandibular", image: "/images/Disfunção Temporomandibular.png", width: 60 },
-    { name: "Pacientes com Necessidades Especiais", image: "/images/disabled-person.png", width: 70 },
-    { name: "Ortodontia Funcional dos Maxilares", image: "/images/Ortordontia dos Maxilares.png", width: 70 },
+    { name: "Endodontia", image: Endodontia },
+    { name: "Implantodontia", image: Implantodontia },
+    { name: "Harmonização Orofacial", image: HarmonizacaoOrofacial },
+    { name: "Ortodontia", image: Ortodontia },
+    { name: "Clinica Geral", image: ClinicaGeral },
+    { name: "Próteses", image: Proteses },
+    { name: "Estomatologia", image: Estomatologia },
+    { name: "Lentes de Contato", image: LentesContato },
+    { name: "Dentística", image: Dentistica },
+    { name: "Odontopediatria", image: Odontopediatria },
+    { name: "Periodontia", image: Periodontia },
+    { name: "Cirurgia e Traumatologia", image: CirurgiaTraumatologia },
+    { name: "Disfunção Temporomandibular", image: DisfuncaoTemporomandibular },
+    { name: "Pacientes com Necessidades Especiais", image: NecessidadesEspeciais },
+    { name: "Ortodontia Funcional dos Maxilares", image: FuncionalMaxilares },
 ];
 
 export default services;

@@ -21,7 +21,7 @@ export default function MyCarousel() {
 
     const slides = [
         "/images/DENTEFIX_801.jpg",
-        "/images/DENTEFIX_3.jpg",
+        "/images/time3.jpg",
         "/images/DENTEFIX_1225.jpg",
         "/images/DENTEFIX_1413.jpg",
     ];
