@@ -1,17 +1,17 @@
-import CarouselComponent from "./carousel/carousel";
-import Footer from "./footer/footer";
-import Header from "./header/header";
-import InfoCards from "./infoCards/infoCards";
-import ProceduresList from "./proceduresList/proceduresList";
+import CarouselComponent from "./components/carousel/carousel";
+import InfoCards from "./components/infoCards/infoCards";
+import OurStory from "./components/ourStory/ourStory";
+import ProceduresList from "./components/proceduresList/proceduresList";
+import Testimonials from "./components/testemonials/testimonials";
 
 export default function Home() {
   return (
     <div>
-      <Header />
       <CarouselComponent />
       <InfoCards />
       <ProceduresList />
-      <Footer />
+      <OurStory />
+      <Testimonials />
     </div>
   );
 }
