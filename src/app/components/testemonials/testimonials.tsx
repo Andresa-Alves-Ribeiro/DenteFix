@@ -85,7 +85,7 @@ export default function Testimonials() {
                     {testimonials.map((testimonial, index) => (
                         <div className="embla__slide" key={index}>
                             <div className="single-item owl-item">
-                                <div className="text">
+                                <div className="text-testimonial">
                                     {testimonial.text}
                                     <FaQuoteRight className="quote-icon" />
                                 </div>

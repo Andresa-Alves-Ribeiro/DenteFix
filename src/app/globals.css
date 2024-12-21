@@ -114,7 +114,7 @@ h6 span {
 }
 
 .card-home-2 {
-  background-color: var(--dark-grey);
+  background-color: var(--middle-grey);
   color: var(--primary-color);
   border-radius: 10px;
   padding: 2rem;
@@ -273,22 +273,6 @@ h6 span {
   display: flex;
 }
 
-.copy-group {
-  background-color: var(--dark-grey);
-  padding: 1rem;
-  color: var(--tertiary-color);
-
-  span {
-    color: var(--primary-color);
-    margin-left: 4px;
-    font-weight: 600;
-  }
-}
-
-.horario-atendimento {
-  color: var(--tertiary-color);
-}
-
 .our-story {
   background-color: var(--background-grey);
 }
@@ -333,7 +317,7 @@ h6 span {
   width: 350px;
 }
 
-.text {
+.text-testimonial {
   position: relative;
   font-size: 16px;
   font-family: "Montserrat", sans-serif;
@@ -346,16 +330,11 @@ h6 span {
   transition: all 500ms ease;
 }
 
-.quote-icon {
-  position: absolute;
-  font-size: 40px;
-  color: #2b98ec80;
-  right: 30px;
-  bottom: 35px;
-  transition: all 500ms ease;
+.text-testimonial:hover {
+  border: 2px solid var(--secondary-color);
 }
 
-.text:after {
+.text-testimonial:after {
   width: 25px;
   height: 25px;
   pointer-events: none;
@@ -364,21 +343,32 @@ h6 span {
   bottom: -14px;
   left: 35px;
   background: white;
-  background: linear-gradient(315deg, #fff 45%, #fff 50%, #fff 56%, #fff 80%);
+  background: linear-gradient(315deg, #ffffff 45%, #ffffff 50%, #fff 56%, #ffffff 80%);
   transform: rotate(45deg);
   border: 2px solid #efefef;
   border-left: none;
   border-top: none;
   transition: all 500ms ease;
 }
-.footer {
-  background-color: var(--middle-grey);
-  color: var(--primary-color);
 
-  p,
-  a {
-    color: var(--tertiary-color);
-  }
+.text-testimonial:hover:after {
+  border-color: var(--secondary-color);
+}
+
+.quote-icon {
+  position: absolute;
+  font-size: 40px;
+  color: #2b98ec80;
+  right: 30px;
+  bottom: 35px;
+  transition: all 500ms ease;
+}
+.footer {
+  background-color: var(--primary-color);
+}
+
+.footer h3, h4 {
+  font-family: "Roboto";
 }
 
 .footer-social-icon {
@@ -387,12 +377,18 @@ h6 span {
   border-radius: 100px;
 }
 
-.footer h3 {
-  color: var(--primary-color);
-}
-
 .footer-contatos-icon {
   background-color: var(--secondary-color);
   padding: 10px;
   border-radius: 100px;
+}
+
+.copy-group {
+  background-color: var(--middle-grey);
+  padding: 1rem;
+
+  span {
+    margin-left: 4px;
+    font-weight: 600;
+  }
 }
