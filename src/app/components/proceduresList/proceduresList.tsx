@@ -8,7 +8,7 @@ import services from "../servicesData/servicesData";
 
 export default function ProceduresList() {
     const [isVisible, setIsVisible] = useState(false);
-    const [itemsToShow, setItemsToShow] = useState<number>(9);
+    const [itemsToShow, setItemsToShow] = useState<number>(6);
     const elementRef = useRef(null);
 
     useEffect(() => {
@@ -31,10 +31,10 @@ export default function ProceduresList() {
     }, []);
 
     const handleShowMore = () => {
-        if (itemsToShow === 9) {
+        if (itemsToShow === 6) {
             setItemsToShow(services.length);
         } else {
-            setItemsToShow(9);
+            setItemsToShow(6);
         }
     };
 
@@ -61,7 +61,7 @@ export default function ProceduresList() {
                 </ul>
 
                 <div className="see-more-button">
-                    <button onClick={handleShowMore} className='teste'>
+                    <button onClick={handleShowMore}>
                         {itemsToShow === 9 ? "Ver Mais" : "Ver Menos"}
                     </button>
                 </div>
