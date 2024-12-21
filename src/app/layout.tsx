@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import ImportBsJS from "./components/importBsJS";
+
 import { Poppins } from 'next/font/google';
 import { Oswald } from 'next/font/google';
 import { Roboto } from 'next/font/google';
@@ -35,6 +37,7 @@ export default function RootLayout({
   return (
     <html lang="pt-br">
       <body className={poppins.className}>
+        <ImportBsJS />
         <Header />
         {children}
         <Footer />
