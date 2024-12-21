@@ -38,12 +38,10 @@ export default function ProceduresList() {
         }
     };
 
-
     return (
         <div className='container'>
             <div className="flex flex-col text-center justify-center py-20 services-itens">
-                <div className={`${isVisible ? 'animate__animated animate__slideInUp' : ''
-                    }`}>
+                <div className={`${isVisible ? 'animate__animated animate__slideInUp' : ''}`}>
                     <h1 ref={elementRef} className="uppercase font-bold text-5xl mb-6 text-zinc-700">Nós oferecemos diferentes <span>serviços</span></h1>
 
                     <span ref={elementRef} className={`text-zinc-500`}>
@@ -51,7 +49,6 @@ export default function ProceduresList() {
                         Oferecemos tratamentos com tecnologia avançada e uma equipe dedicada ao seu bem-estar.
                         Agende sua consulta e descubra o poder de um sorriso saudável e radiante!
                     </span>
-
                 </div>
 
                 <ul className="flex flex-wrap justify-center mt-14">

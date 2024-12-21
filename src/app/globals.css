@@ -240,24 +240,32 @@ h6 span {
   bottom: 4px;
 }
 
+.image-dentist {
+  transition: transform 0.8s ease;
+  border-radius: 5px;
+}
+
+.image-dentist-container:hover .image-dentist {
+  transform: scale(1.1);
+}
+
 .info-dentist {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 20px;
   flex-wrap: wrap;
-  width: 18rem;
-  border: 1px solid var(--secondary-color);
+  width: 15rem;
   border-radius: 4px;
-  background-color: var(--secondary-color);
+}
 
-  h3 {
-    color: var(--primary-color);
-    font-size: 20px;
-    margin-bottom: 10px;
-    font-weight: 700;
-    line-height: 1.2;
-  }
+.info-dentist h3 {
+  font-size: 22px;
+  margin-bottom: 5px;
+  font-family: "Roboto";
+  color: var(--secondary-color);
+  font-weight: 700;
+  line-height: 1.2;
 }
 
 .wrapper-team-icon {
@@ -343,7 +351,13 @@ h6 span {
   bottom: -14px;
   left: 35px;
   background: white;
-  background: linear-gradient(315deg, #ffffff 45%, #ffffff 50%, #fff 56%, #ffffff 80%);
+  background: linear-gradient(
+    315deg,
+    #ffffff 45%,
+    #ffffff 50%,
+    #fff 56%,
+    #ffffff 80%
+  );
   transform: rotate(45deg);
   border: 2px solid #efefef;
   border-left: none;
@@ -367,7 +381,8 @@ h6 span {
   background-color: var(--primary-color);
 }
 
-.footer h3, h4 {
+.footer h3,
+h4 {
   font-family: "Roboto";
 }
 
