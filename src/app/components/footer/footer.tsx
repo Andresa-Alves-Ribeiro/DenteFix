@@ -121,7 +121,7 @@ export default function Footer() {
             </div>
 
             <div className="copy-group">
-                <p className="text-sm flex items-center justify-center text-zinc-200">Copyright &copy; 2024 <span className="font-semibold">Andresa Alves Ribeiro</span>. All Rights Reserved</p>
+                <p className="text-sm flex items-center justify-center text-zinc-200">Copyright &copy; 2025 <span className="font-semibold">Andresa Alves Ribeiro</span>. All Rights Reserved</p>
             </div>
         </div>
     );

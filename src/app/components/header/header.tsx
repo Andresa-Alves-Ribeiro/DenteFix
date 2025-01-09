@@ -6,14 +6,16 @@ import Logo from "../../../../public/images/logo.png";
 
 import { FaFacebookF, FaInstagram, FaWhatsapp } from "react-icons/fa";
 import Link from "next/link";
-import { BsClockFill, BsFillTelephoneFill } from "react-icons/bs";
+import { BsFillTelephoneFill } from "react-icons/bs";
 
 export default function Header() {
     return (
         <header className="header flex flex-col">
             <div className="flex justify-between items-center p-6">
                 <div className="logo-wrapper">
-                    <Image src={Logo} alt="Logo da Empresa" width={200} />
+                    <Link href="/">
+                        <Image src={Logo} alt="Logo da Empresa" width={200} />
+                    </Link>
                 </div>
 
                 <div className="flex items-center gap-6">
@@ -44,7 +46,7 @@ export default function Header() {
                 <nav className="flex nav-links">
                     <Link href="/">Home</Link>
                     <Link href="#">A DenteFix</Link>
-                    <Link href="#">A Clinica</Link>
+                    <Link href="/clinic">A Clinica</Link>
                     <Link href="/team">Equipe</Link>
                     <Link href="#">Contato</Link>
                 </nav>
